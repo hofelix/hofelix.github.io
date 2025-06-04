@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>歡迎進入未來世界</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1549921296-3a6b1a2d0384?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffe7;
+      backdrop-filter: blur(8px);
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 60px;
+      border: 2px solid #0ff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #00ffe7;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #0ff;
+      text-shadow: 0 0 15px #0ff;
+      animation: flicker 2s infinite;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .enter-button {
+      margin-top: 30px;
+      padding: 12px 30px;
+      font-size: 1rem;
+      background: transparent;
+      color: #0ff;
+      border: 2px solid #0ff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .enter-button:hover {
+      background: #0ff;
+      color: #000;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      45% { opacity: 0.8; }
+      48% { opacity: 0.2; }
+      50% { opacity: 1; }
+      52% { opacity: 0.5; }
+      55% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>歡迎來到霓虹之城</h1>
+    <p>準備好進入賽博未來了嗎？</p>
+    <button class="enter-button" onclick="alert('進入系統中...')">ENTER</button>
+  </div>
+</body>
+</html>
